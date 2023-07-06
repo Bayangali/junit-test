@@ -69,8 +69,8 @@ jobs:
       - name: Download Maven build artifact
         uses: actions/download-artifact@v3
         with:
-          name: junit-test-1.0.jar
-          path: /home/runner/work/junit-test/junit-test/target/junit-test.jar/home/runner/work/junit-test/junit-test/target/junit-test.jar
+          name: junit-test.jar
+          path: /home/runner/work/junit-test/junit-test/target/junit-test.jar/home/runner/work/junit-test/junit-test/target/
       - name: Build Docker container
         run: docker build -t junit-test/order-service-testing .
       - name: Push Docker image
