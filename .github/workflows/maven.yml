@@ -32,9 +32,6 @@ jobs:
           java-version: ${{matrix.java}}
       - name: Compile the Project
         run: mvn -B compile
-
-
-
   build:
 
     runs-on: ubuntu-latest
@@ -58,8 +55,6 @@ jobs:
         with:
           name: artifact.jar
           path: junit-test/target/order-service-testing.jar
-
-
   deploy:
 
     runs-on: ubuntu-latest
