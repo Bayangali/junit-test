@@ -54,8 +54,8 @@ jobs:
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: artifact.jar
-          path: /target/order-service-testing.jar
+          name: order-service-testing.jar
+          path: /target/
 
   deploy:
     runs-on: ubuntu-latest
