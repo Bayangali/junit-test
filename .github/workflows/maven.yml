@@ -68,7 +68,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: artifact.jar
-          path: junit-test/target/
+          path: junit-test/target/order-service-testing.jar
       - name: Build Docker container
         run: docker build -t junit-test/order-service-testing .
       - name: Push Docker image
