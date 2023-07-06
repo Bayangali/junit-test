@@ -54,8 +54,8 @@ jobs:
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: junit-test-1.0.jar
-          path: /target/
+          name: junit-test.jar
+          path: /target/junit-test.jar
 
   deploy:
     runs-on: ubuntu-latest
