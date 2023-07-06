@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: artifact.jar
-          path: junit-test/target/order-service-testing.jar
+          path: junit-test/junit-test/target/order-service-testing.jar
 
   deploy:
     runs-on: ubuntu-latest
