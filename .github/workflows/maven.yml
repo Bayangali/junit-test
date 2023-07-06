@@ -54,7 +54,7 @@ jobs:
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: order-service-testing.jar
+          name: junit-test-1.0.jar
           path: /target/
 
   deploy:
@@ -67,7 +67,7 @@ jobs:
       - name: Download Maven build artifact
         uses: actions/download-artifact@v3
         with:
-          name: order-service-testing.jar
+          name: junit-test-1.0.jar
           path: /target/
       - name: Build Docker container
         run: docker build -t junit-test/order-service-testing .
