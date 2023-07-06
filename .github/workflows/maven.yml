@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: junit-test.jar
-          path: /target/junit-test.jar
+          path: /home/runner/work/junit-test/junit-test/target/junit-test.jar
 
   deploy:
     runs-on: ubuntu-latest
@@ -70,7 +70,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: junit-test-1.0.jar
-          path: /target/
+          path: /home/runner/work/junit-test/junit-test/target/junit-test.jar/home/runner/work/junit-test/junit-test/target/junit-test.jar
       - name: Build Docker container
         run: docker build -t junit-test/order-service-testing .
       - name: Push Docker image
